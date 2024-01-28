@@ -1,5 +1,17 @@
 # Rainforest Frontend Homework
 
+# Instructions for reviewer
+
+Test can be run with `yarn run test`. The app can be started with `yarn start`, and accessed on `http://localhost:3000`. Make sure `yarn install` is run prior to starting the dev server.
+
+# Points of improvement
+
+- Currently, CSS was mostly done inline, with PicoCSS as a base layer for reasonable default styles. This can (and did in some points) get a little messy. For a larger application, Tailwind (or UnoCSS) would have been good options, but introducing a build step was out of scope for a take home of this size.
+
+- Basic unit testing was done to cover most functionality, but more tests being added to TestSuite and TestSuiteOverview would have been helpful. Integration testing with something like Playwright would also help to ensure that the entire flow of opening up the page, loading TestSuites, editing their names and associated TestPlans, and saving, worked as expected.
+
+# Original Instructions Below
+
 At Rainforest our front-end applications often exchange JSON data with various RESTful APIs. In
 this homework we provide a sample API with a single endpoint and ask you to create a UI to display and edit test suite plans.
 

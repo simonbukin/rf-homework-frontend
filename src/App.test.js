@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders header', () => {
-  render(<App />);
-  const headerElement = screen.getByText(/and save to reload/i);
-  expect(headerElement).toBeInTheDocument();
+describe("App", () => {
+  it("renders the header", () => {
+    render(<App />);
+    const headerElement = screen.getByText("Rainforest Frontend Homework");
+    expect(headerElement).toBeInTheDocument();
+  });
 });
